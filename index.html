@@ -43,13 +43,13 @@
 			}
 		</style>
 	</head>
-	<body hx-get="partials/slider.html" hx-trigger="mouseenter once" hx-target="#slider">
+	<body hx-get="partials/slider.html" hx-trigger="mouseenter once" hx-target="#slider" hx-swap="outerHTML">
 		<div class="box">
 			<h1>Some Third-Party Scripts will load below, when you cursor hover body tag.</h1>
 			<ol>
 				<li>
 					<strong>Load iframe on click</strong><br>
-					<div class="video" hx-get="partials/video.html" hx-trigger="click once" hx-target="this">
+					<div class="video" hx-get="partials/video.html" hx-trigger="click once">
 						Click to play video
 					</div>
 				</li>
